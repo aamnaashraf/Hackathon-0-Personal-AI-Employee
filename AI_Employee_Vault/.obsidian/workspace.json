@@ -1,0 +1,224 @@
+{
+  "main": {
+    "id": "9a7961ec34a444ec",
+    "type": "split",
+    "children": [
+      {
+        "id": "692c3a516959f6f3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0e4aa6416c54ae97",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Done/WHATSAPP_REPLY_halima_test.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "WHATSAPP_REPLY_halima_test"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "bad019e25d6ce6e3",
+    "type": "split",
+    "children": [
+      {
+        "id": "db7ab0063d54b1b8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ba7373ef5bbe7cbe",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "45f1005845205eb1",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "df60cb143970470d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 294.5124969482422
+  },
+  "right": {
+    "id": "70b8105757a4f82a",
+    "type": "split",
+    "children": [
+      {
+        "id": "11ed18f84b2eef7a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f6ee547793f1b12c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Welcome.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Welcome"
+            }
+          },
+          {
+            "id": "88d6e93af6ff2242",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Welcome.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Welcome"
+            }
+          },
+          {
+            "id": "9499efb3c4bb5a3d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "af8816e48be1020a",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "d561f90d70e10065",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Welcome.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Welcome"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "0e4aa6416c54ae97",
+  "lastOpenFiles": [
+    "Approved/WHATSAPP_REPLY_halima_test.md",
+    "Done/WHATSAPP_REPLY_halima_test.md",
+    "Approved/WHATSAPP_REPLY_aamna_test.md",
+    "Done/WHATSAPP_REPLY_aamna_test.md",
+    "Logs/2026-02-15_approval_handler.json",
+    "Done/WHATSAPP_REPLY_mazher_biryani.md",
+    "Approved/WHATSAPP_REPLY_mazher_biryani.md",
+    "Done/WHATSAPP_REPLY_halima_dua.md",
+    "Done/WHATSAPP_REPLY_maimoona_thanks.md",
+    "Approved/WHATSAPP_REPLY_halima_dua.md",
+    "Done/WHATSAPP_REPLY_fariha_help.md",
+    "Needs_Action/WHATSAPP_f7f867a7fa.md",
+    "Needs_Action/WHATSAPP_9f64239629.md",
+    "Needs_Action/WHATSAPP_1bcd89e5ce.md",
+    "Needs_Action/WHATSAPP_7dbf59f2c7.md",
+    "Needs_Action/WHATSAPP_8598ef2b06.md",
+    "Needs_Action/WHATSAPP_0fe6e3d2ee.md",
+    "Needs_Action/WHATSAPP_756b0ebede.md",
+    "Needs_Action/WHATSAPP_2876e63151.md",
+    "Dashboard.md",
+    "Briefings/Social_Media_Summary_Week_2026-02-13.md",
+    "Briefings/Odoo_Integration_Compliance_Report.md",
+    "Briefings/MONDAY_CEO_BRIEFING_20260212.md",
+    "Done/LINKEDIN_POST_test_post.md",
+    "Done/LINKEDIN_POST_ai_autonomous.md",
+    "Approved/LINKEDIN_POST_test_post.md",
+    "Logs/2026-02-14_linkedin.json",
+    "Logs/2026-02-14_email_sender.log",
+    "Logs/2026-02-14_approval_handler.json",
+    "Logs/2026-02-13_twitter.json",
+    "Logs/system_test_20260212_234334.json",
+    "Logs/system_test_20260212_234304.json",
+    "Logs/errors.log",
+    "Signals",
+    "Updates"
+  ]
+}

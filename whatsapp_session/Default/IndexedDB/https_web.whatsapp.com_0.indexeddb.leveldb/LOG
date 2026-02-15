@@ -1,0 +1,24 @@
+2026/02/15-00:23:12.193 156c Reusing MANIFEST E:\hackathon 0\Hackathon-0-FTE-s-\whatsapp_session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/02/15-00:23:12.196 156c Recovering log #4743
+2026/02/15-00:23:12.303 156c Reusing old log E:\hackathon 0\Hackathon-0-FTE-s-\whatsapp_session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/004743.log 
+2026/02/15-00:23:12.309 156c Delete type=2 #4690
+2026/02/15-00:23:12.309 156c Delete type=2 #4691
+2026/02/15-00:23:12.309 156c Delete type=2 #4705
+2026/02/15-00:23:12.309 156c Delete type=2 #4721
+2026/02/15-00:23:12.309 156c Delete type=2 #4722
+2026/02/15-00:23:12.309 156c Delete type=2 #4723
+2026/02/15-00:23:12.310 156c Delete type=2 #4724
+2026/02/15-00:23:12.310 156c Delete type=2 #4725
+2026/02/15-00:23:12.310 156c Delete type=2 #4740
+2026/02/15-00:23:12.310 156c Delete type=2 #4741
+2026/02/15-00:23:12.310 156c Delete type=2 #4742
+2026/02/15-00:23:12.310 156c Delete type=2 #4746
+2026/02/15-00:24:04.793 156c Level-0 table #4768: started
+2026/02/15-00:24:04.954 156c Level-0 table #4768: 1126949 bytes OK
+2026/02/15-00:24:04.973 156c Delete type=0 #4743
+2026/02/15-00:24:06.014 4054 Compacting 1@0 + 0@1 files
+2026/02/15-00:24:06.092 4054 Generated table #4769@0: 18547 keys, 235955 bytes
+2026/02/15-00:24:06.187 4054 Generated table #4770@0: 13793 keys, 373218 bytes
+2026/02/15-00:24:06.187 4054 Compacted 1@0 + 0@1 files => 609173 bytes
+2026/02/15-00:24:06.192 4054 compacted to: files[ 0 2 21 0 0 0 0 ]
+2026/02/15-00:24:06.194 4054 Delete type=2 #4768
