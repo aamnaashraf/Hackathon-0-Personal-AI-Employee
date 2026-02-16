@@ -14,23 +14,43 @@ class OdooMCP:
         self.config = config
         self.url = config['url']
         self.db = config['database']
-        self.api_key = config['api_key']
+        self.username = config['username']
+        self.password = config['password']
         self.uid = None
         self.headers = {
             'Content-Type': 'application/json',
         }
         self.running = True
-        
+
     def authenticate(self):
-        """Authenticate with Odoo using API key"""
+        """Authenticate with Odoo using username and password"""
         try:
-            # In Odoo with API keys, we typically use the API key as a bearer token
-            self.headers['Authorization'] = f'Bearer {self.api_key}'
-            # Test connection
-            response = self.call_odoo_method('res.users', 'read', [1], ['name'])
-            if response:
-                print("[ODOO_MCP] Successfully authenticated with Odoo")
+            payload = {
+                'jsonrpc': '2.0',
+                'method': 'call',
+                'params': {
+                    'service': 'common',
+                    'method': 'authenticate',
+                    'args': [self.db, self.username, self.password, {}]
+                },
+                'id': int(time.time())
+            }
+
+            response = requests.post(
+                f"{self.url}/jsonrpc",
+                headers=self.headers,
+                data=json.dumps(payload),
+                timeout=30
+            )
+
+            result = response.json()
+            if 'result' in result and result['result']:
+                self.uid = result['result']
+                print(f"[ODOO_MCP] Successfully authenticated with Odoo (UID: {self.uid})")
                 return True
+            else:
+                print(f"[ODOO_MCP] Authentication failed: {result}")
+                return False
         except Exception as e:
             print(f"[ODOO_MCP] Authentication failed: {e}")
             return False
@@ -41,14 +61,14 @@ class OdooMCP:
             args = []
         if kwargs is None:
             kwargs = {}
-        
+
         payload = {
             'jsonrpc': '2.0',
             'method': 'call',
             'params': {
                 'service': 'object',
                 'method': 'execute_kw',
-                'args': [self.db, 0, self.api_key, model, method, args, kwargs]
+                'args': [self.db, self.uid, self.password, model, method, args, kwargs]
             },
             'id': int(time.time())
         }
@@ -121,7 +141,7 @@ class OdooMCP:
         try:
             partner_ids = self.call_odoo_method('res.partner', 'search', [domain])
             if partner_ids:
-                partners = self.call_odoo_method('res.partner', 'read', [partner_ids], ['name', 'email', 'phone'])
+                partners = self.call_odoo_method('res.partner', 'read', [partner_ids], {'fields': ['name', 'email', 'phone']})
                 return partners
             else:
                 return []
@@ -263,17 +283,17 @@ if __name__ == "__main__":
     # Load Odoo configuration from environment
     import dotenv
     dotenv.load_dotenv()
-    
+
     config = {
         'url': os.getenv('ODOO_URL', 'http://localhost:8069'),
         'database': os.getenv('ODOO_DB', 'gold_tier_db'),
-        'api_key': os.getenv('ODOO_API_KEY', 'your_api_key_here'),
+        'username': os.getenv('ODOO_USERNAME'),
+        'password': os.getenv('ODOO_PASSWORD'),
     }
-    
-    if not config['api_key'] or config['api_key'] == 'your_api_key_here':
-        print("[WARNING] Odoo API key not found in .env file. Please configure ODOO_API_KEY.")
+
+    if not config['username'] or not config['password']:
+        print("[WARNING] Odoo credentials not found in .env file. Please configure ODOO_USERNAME and ODOO_PASSWORD.")
         print("[INFO] This is a simulation - Odoo operations will be logged but not executed.")
-        # For simulation, create a mock Odoo MCP
         print("[ODOO_MCP] Running in simulation mode")
     else:
         VAULT_PATH = "E:/Hackathon 0/Hackathon-0-FTE-s-/AI_Employee_Vault"
